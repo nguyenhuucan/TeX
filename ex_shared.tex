@@ -1,0 +1,48 @@
+% SIAM Shared Information Template
+% This is information that is shared between the main document and any
+% supplement. If no supplement is required, then this information can
+% be included directly in the main document.
+
+
+% Packages and macros go here
+\usepackage{lipsum}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{algorithmic}
+\ifpdf
+  \DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
+\else
+  \DeclareGraphicsExtensions{.eps}
+\fi
+
+% Add a serial/Oxford comma by default.
+\newcommand{\creflastconjunction}{, and~}
+
+% Used for creating new theorem and remark environments
+\newsiamremark{remark}{Remark}
+\newsiamremark{hypothesis}{Hypothesis}
+\crefname{hypothesis}{Hypothesis}{Hypotheses}
+\newsiamthm{claim}{Claim}
+
+% Sets running headers as well as PDF title and authors
+\headers{Continuity  with respect to...}{N.H. Tuan and E. Nane}
+
+% Title. If the supplement option is on, then "Supplementary Material"
+% is automatically inserted before the title.
+\title{Continuity  with respect to   fractional order   for a family of time fractional  stochastic  heat equations\thanks{Submitted to SIAM Journal on Mathematical Analysis (SIMA).
+\funding{The author Nguyen Huy Tuan is funded by Van Lang University.}}}
+
+% Authors: full names plus addresses.
+\author{Erkan Nane\thanks{Department of Mathematics and Statistics
+		Auburn University. \email{E-mail: nane@auburn.edu}}
+\and Nguyen Huy Tuan\thanks{Corresponding author at Division of Applied Mathematics, Science and Technology Advanced Institute,  Van Lang University, Ho Chi Minh City, Vietnam and Faculty of Applied Technology, School of Engineering and Technology, Van Lang University, Ho Chi Minh City, Vietnam. (\email{E-mail: nguyenhuytuan@vlu.edu.vn}).}}
+
+\usepackage{amsopn}
+\DeclareMathOperator{\diag}{diag}
+
+
+%%% Local Variables: 
+%%% mode:latex
+%%% TeX-master: "ex_article"
+%%% End: 
